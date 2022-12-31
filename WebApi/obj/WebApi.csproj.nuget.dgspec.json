@@ -1,0 +1,327 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/WebApi/WebApi.csproj": {}
+  },
+  "projects": {
+    "/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/App/App.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/App/App.csproj",
+        "projectName": "App",
+        "projectPath": "/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/App/App.csproj",
+        "packagesPath": "/Users/antondurcak/.nuget/packages/",
+        "outputPath": "/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/App/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/antondurcak/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/Domain/Domain.csproj": {
+                "projectPath": "/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/Domain/Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/DataAccess/DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/DataAccess/DataAccess.csproj",
+        "projectName": "DataAccess",
+        "projectPath": "/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/DataAccess/DataAccess.csproj",
+        "packagesPath": "/Users/antondurcak/.nuget/packages/",
+        "outputPath": "/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/DataAccess/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/antondurcak/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/App/App.csproj": {
+                "projectPath": "/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/App/App.csproj"
+              },
+              "/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/Domain/Domain.csproj": {
+                "projectPath": "/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/Domain/Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/Domain/Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/Domain/Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/Domain/Domain.csproj",
+        "packagesPath": "/Users/antondurcak/.nuget/packages/",
+        "outputPath": "/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/antondurcak/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/HttpClients/HttpClients.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/HttpClients/HttpClients.csproj",
+        "projectName": "HttpClients",
+        "projectPath": "/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/HttpClients/HttpClients.csproj",
+        "packagesPath": "/Users/antondurcak/.nuget/packages/",
+        "outputPath": "/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/HttpClients/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/antondurcak/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/Domain/Domain.csproj": {
+                "projectPath": "/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/Domain/Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/WebApi/WebApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/WebApi/WebApi.csproj",
+        "projectName": "WebApi",
+        "projectPath": "/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/WebApi/WebApi.csproj",
+        "packagesPath": "/Users/antondurcak/.nuget/packages/",
+        "outputPath": "/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/WebApi/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/antondurcak/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/App/App.csproj": {
+                "projectPath": "/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/App/App.csproj"
+              },
+              "/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/DataAccess/DataAccess.csproj": {
+                "projectPath": "/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/DataAccess/DataAccess.csproj"
+              },
+              "/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/HttpClients/HttpClients.csproj": {
+                "projectPath": "/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/HttpClients/HttpClients.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

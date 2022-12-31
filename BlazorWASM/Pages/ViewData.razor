@@ -1,0 +1,71 @@
+@page "/View"
+@using HttpClients.Interfaces
+@using Domain
+@inject IToyService ToyService;
+@inject IChildService ChildService;
+
+<h3>ViewData</h3>
+
+@if (Toys == null || Children == null)
+{
+
+}
+else if (!Toys.Any() || !Children.Any())
+{
+	<label>Loading...</label>
+}
+else
+{
+	@foreach (Child child in Children)
+	{
+		<div>
+			<div>@child.Name is a @child.Age old @child.Gender</div>
+			@foreach (var toy in child.Toys)
+			{
+				<div>@toy.Name @toy.Condition @toy.Color</div>
+			}
+		</div>
+	}
+}
+
+
+@code {
+	private IEnumerable<Child>? Children;
+	private IEnumerable<Toy>? Toys;
+
+	protected override async Task OnInitializedAsync()
+	{
+
+		try
+		{
+			Children = await ChildService.GetAllAsync();
+			Toys = await ToyService.GetAllAsync();
+		}
+		catch (Exception e)
+		{
+			Console.WriteLine(e);
+			throw;
+		}
+
+	}
+
+	private async Task<string> ChildName(int childId)
+	{
+
+		Child child = Children.FirstOrDefault(c => c.Id == childId);
+		return child.Name;
+	}
+
+	private async Task<string> ChildGender(int childId)
+	{
+		Child child = Children.FirstOrDefault(c => c.Id == childId);
+		return child.Gender;
+	}
+
+	private async Task<string> ChildAge(int childId)
+	{
+		Child child = Children.FirstOrDefault(c => c.Id == childId);
+		return child.Age.ToString();
+	}
+
+}

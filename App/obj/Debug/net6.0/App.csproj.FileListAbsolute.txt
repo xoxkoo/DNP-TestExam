@@ -1,0 +1,15 @@
+/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/App/bin/Debug/net6.0/App.deps.json
+/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/App/bin/Debug/net6.0/App.dll
+/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/App/bin/Debug/net6.0/App.pdb
+/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/App/bin/Debug/net6.0/Domain.dll
+/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/App/bin/Debug/net6.0/Domain.pdb
+/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/App/obj/Debug/net6.0/App.csproj.AssemblyReference.cache
+/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/App/obj/Debug/net6.0/App.GeneratedMSBuildEditorConfig.editorconfig
+/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/App/obj/Debug/net6.0/App.AssemblyInfoInputs.cache
+/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/App/obj/Debug/net6.0/App.AssemblyInfo.cs
+/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/App/obj/Debug/net6.0/App.csproj.CoreCompileInputs.cache
+/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/App/obj/Debug/net6.0/App.csproj.CopyComplete
+/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/App/obj/Debug/net6.0/App.dll
+/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/App/obj/Debug/net6.0/refint/App.dll
+/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/App/obj/Debug/net6.0/App.pdb
+/Users/antondurcak/Documents/via/Semester III/DNP/TestExam/App/obj/Debug/net6.0/ref/App.dll

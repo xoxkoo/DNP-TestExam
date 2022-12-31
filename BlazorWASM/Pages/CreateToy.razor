@@ -1,0 +1,77 @@
+@page "/CreateToy"
+@using Domain
+@using Domain.DTOs
+@using HttpClients.Interfaces
+@inject IToyService ToyService;
+@inject IChildService ChildService;
+
+<h3>CreateToy</h3>
+
+@if (Children != null && Children.Any())
+{
+
+	<div>
+		<label>Child:</label>
+		<select @bind="selectedChild">
+			<option>Child</option>
+			@foreach (Child child in Children)
+			{
+				<option value="@child.Id">@child.Name</option>
+			}
+		</select>
+
+		<input type="text" @bind="name" placeholder="name">
+		<input type="text" @bind="color" placeholder="color">
+		<input type="text" @bind="condition" placeholder="condition">
+
+		<button @onclick="CreateAsync">Create</button>
+	</div>
+}
+
+
+@code {
+
+	private IEnumerable<Child>? Children;
+	private int? selectedChild;
+	private string? color;
+	private string? condition;
+	private string? name;
+
+	protected override async Task OnInitializedAsync()
+	{
+		Children = await ChildService.GetAllAsync();
+	}
+
+
+	private async Task CreateAsync()
+	{
+		if (string.IsNullOrEmpty(color))
+		{
+			return;
+		}
+		if (string.IsNullOrEmpty(condition))
+		{
+			return;
+		}
+		if (string.IsNullOrEmpty(name))
+		{
+			return;
+		}
+		if (selectedChild is 0 or null)
+		{
+			return;
+		}
+
+		ToyCreationDto dto = new()
+		{
+			Name = name,
+			Color = color,
+			Condition = condition,
+			ChildId = (int)selectedChild
+		};
+
+
+		ToyService.CreateAsync(dto);
+	}
+
+}

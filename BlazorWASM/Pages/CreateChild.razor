@@ -1,0 +1,39 @@
+@page "/CreateChild"
+@using HttpClients.Interfaces
+@using Domain
+@using Domain.DTOs
+@inject IChildService ChildService;
+
+
+
+<h3>CreateChild</h3>
+
+<input type="text" @bind="name">
+<input type="number" min="6" @bind="age">
+<input type="gender" @bind="gender">
+<button @onclick="Create">create</button>
+
+@code {
+
+	private string? gender;
+	private int age = 6;
+	private string? name;
+
+	private async Task Create()
+	{
+		if (string.IsNullOrEmpty(name))
+		{
+			// titleMessage = "Title cannot be empty!";
+			return;
+		}
+		if (string.IsNullOrEmpty(gender))
+		{
+			// titleMessage = "Title cannot be empty!";
+			return;
+		}
+
+		ChildCreationDto child = new ChildCreationDto(name, age,gender);
+		await ChildService.CreateAsync(child);
+	}
+
+}
